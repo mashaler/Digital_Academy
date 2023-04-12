@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <script src="simple.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="return false;">
+        <label for="fname">First Name:</label>
+        <input type="text" placeholder="Enter your First Name" id="fname"><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" placeholder="Enter your Last Name" id="lname"><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your Email Address" id="email"><br>
+
+        <select name="country" id="country" >
+            <option value="country">Country</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Botswana">Botswana</option>
+            <option value="Egypt">Egypt</option>
+        </select>
+
+        <br><button type="submit" onclick="check()">Register</button>
+    </form>
+</body>
+</html>
